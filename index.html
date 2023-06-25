@@ -27,9 +27,29 @@
   Login
   Sign Up -->
 
-  <div class="hamburguer-menu mobile">
-    <img src="/images/logo.svg">
-    <button>btn</button>
+  <div class="menubar-mobile">
+    <img src="/images/logo.svg" alt="logo">
+    <div id="hamburguer-btn" onclick="menuOnClick()">
+      <div>
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+    </div>
+    <div id="dropdown-mobile" class="dropdown-closed">
+      <div class="dropdown-content">
+        <div class="dropdown-links">
+          <ul>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>Resources</li>
+          </ul>
+        </div>
+        
+        <button class="btn-login">Login</button>
+        <button class="btn-signup">Sign Up</button>
+      </div>
+    </div>
   </div>
 
   <header>
@@ -132,6 +152,8 @@
 
   </footer>
   
+  <script src="/index.js"></script>
+
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.

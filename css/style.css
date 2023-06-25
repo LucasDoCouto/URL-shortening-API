@@ -54,16 +54,133 @@ h1{
     width: 90%;
 }
 
-/* Menu Mobile */
-
-.hamburguer-menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
+.mobile{
+    display: none;
 }
 
+/* Menu Mobile */
+
+
+.menubar-mobile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: end;
+    width: 100vw;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+}
+
+.menubar-mobile img{
+    /* flex: auto; */
+    width: 120px;
+    height: auto;
+}
+
+#hamburguer-btn{
+    flex: auto;
+    align-items: end;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: var(--color-n-grayish-violet);
+    transition: 0.3s ease;
+}
+
+#bar1{
+    transform: translateY(-6px);
+}
+
+#bar3{
+    transform: translateY(6px);
+}
+
+.clicked {
+    display: block;
+}
+  
+.clicked #bar1 {
+    transform: translateY(3px) rotateZ(-45deg);
+}
+  
+.clicked #bar2 {
+    opacity: 0;
+}
+  
+.clicked #bar3 {
+    transform: translateY(-3px) rotateZ(45deg);
+}
+
+
+.dropdown-closed{
+    display: none;
+}
+
+
+#dropdown-mobile{
+    height: 50vh;
+    width: 100%;
+    z-index: 3;
+    margin-top: 15px;
+}
+
+.dropdown-content{
+    width: 100%;
+    /* display: grid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-p-dark-violet);
+    border-radius: 10px;
+    color: white;
+    z-index: 4;
+    /* margin-top: 15px; */
+    padding: 20px;
+}
+
+.dropdown-links{
+    border-bottom: 1px solid var(--color-n-light-gray);
+    width: 100%;
+}
+
+.dropdown-content ul{
+    list-style: none;
+}
+
+.dropdown-content ul li{
+    margin-bottom: 30px;
+}
+
+.btn-login{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    padding: 13px 20px;
+    margin: 2vh 0 0 0;
+    width: 100%;
+}
+
+.btn-signup{
+    background-color: var(--color-p-cyan);
+    color: white;
+    border: none;
+    border-radius: 100rem;
+    cursor: pointer;
+    padding: 13px 20px;
+    margin: 1vh 0 2vh 0;
+    width: 100%;
+}
 
 /* Header */
 
@@ -76,7 +193,7 @@ header{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-top: 13vh;
+    padding-top: 10vh;
     padding-bottom: var(--space-2xl-3xl);
 }
 
