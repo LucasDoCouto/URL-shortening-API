@@ -54,6 +54,17 @@ h1{
     width: 90%;
 }
 
+/* Menu Mobile */
+
+.hamburguer-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+
 /* Header */
 
 header{
@@ -126,12 +137,20 @@ header img{
     padding: 130px 0;
 }
 
+.features-vertical-line{
+    background-color: var(--color-p-cyan);
+    position: absolute;
+    height: 100%;
+    min-width: 10px;
+}
+
 .features{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: var(--space-2xl-3xl);
+    position: relative;
 }
 
 .features-card{
