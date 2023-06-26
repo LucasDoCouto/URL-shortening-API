@@ -63,25 +63,33 @@ h1{
 
 .menubar-mobile{
     display: flex;
+    flex: auto auto;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: end;
+    /* justify-content: end; */
     width: 100vw;
     height: auto;
     padding: 20px;
     position: absolute;
 }
 
-.menubar-mobile img{
+.mobile-logo{
+    background-color: wheat;
+    justify-content: flex-start;
+}
+
+.mobile-logo img{
     /* flex: auto; */
     width: 120px;
     height: auto;
+    align-self: flex-start;
+    align-items: start;
 }
 
 #hamburguer-btn{
-    flex: auto;
-    align-items: end;
+    /* flex: auto; */
+    align-items: flex-end;
     display: flex;
     flex-direction: column;
     cursor: pointer;
@@ -129,6 +137,7 @@ h1{
     width: 100%;
     z-index: 3;
     margin-top: 15px;
+    transition: 0.3s ease;
 }
 
 .dropdown-content{
@@ -145,6 +154,7 @@ h1{
     z-index: 4;
     /* margin-top: 15px; */
     padding: 20px;
+    transition: 0.3s ease;
 }
 
 .dropdown-links{
