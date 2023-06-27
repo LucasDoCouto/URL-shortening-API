@@ -67,15 +67,15 @@ h1{
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    /* justify-content: end; */
-    width: 100vw;
+    justify-content: space-between;
+    width: 100%;
     height: auto;
     padding: 20px;
     position: absolute;
 }
 
 .mobile-logo{
-    background-color: wheat;
+    background-color: none;
     justify-content: flex-start;
 }
 
