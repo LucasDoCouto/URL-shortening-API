@@ -1,6 +1,7 @@
 const urlInput = document.querySelector(".url-input")
 
 let  urlAddress
+let urlHistory
 let shortUrlFull
 let shortUrl
 
@@ -25,11 +26,16 @@ function menuOnClick() {
 
 async function getShortLink (){
   urlAddress = urlInput.value
-  const url = "https://api.shrtco.de/v2/shorten?url=" + urlAddress
-
-  const response = await fetch(url)
-  const result = await response.json()
-  return result
+  if (urlAddress == urlHistory){
+    alert("Você já encurtou essa URL, insira uma url diferente")
+  }
+  else {
+    urlHistory = urlAddress
+    const url = "https://api.shrtco.de/v2/shorten?url=" + urlAddress
+    const response = await fetch(url)
+    const result = await response.json()
+    return result
+  }
   // console.log (result)
 }
 
