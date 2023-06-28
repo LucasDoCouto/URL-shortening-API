@@ -73,10 +73,14 @@
 
     <div class="short-window">
       <input type="text" class="url-input" placeholder="Shorten a link here..."> 
-      <button class="square-btn">Shorten It!</button>
+      <button class="square-btn" onclick="createShortLink()">Shorten It!</button>
     </div> 
 
-    <h3>Advanced Statistics</h3>
+    <div id="div-pai">
+      <!-- Aqui o conteúdo dos links encurtados serão inseridos -->
+    </div>
+
+    <h3 id="titulo">Advanced Statistics</h3>
 
     <p>
       Track how your links are performing across the web with our 
