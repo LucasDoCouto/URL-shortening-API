@@ -192,6 +192,49 @@ h1{
     width: 100%;
 }
 
+@media screen and (min-width: 750px) {
+    .menubar-mobile{
+        display: none;
+    }
+}
+
+/* Menu Desktop */
+
+.menubar-desktop{
+    display: none;
+}
+
+.menubar-desktop-wrapper{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.menubar-left ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+@media screen and (min-width: 750px) {
+    .menubar-desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: center;
+        margin-top: 20px;
+    }
+}
+
+
 /* Header */
 
 header{
@@ -371,6 +414,17 @@ header img{
     align-items: center;
     justify-content: center;
     height: 35vh;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section img{
+    position:absolute;
+    z-index: -1;
+    overflow: hidden;
+    right: 0;
+    height: 100%;
 }
 
 /* Buttons */
